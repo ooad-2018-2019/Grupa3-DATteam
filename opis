@@ -1,0 +1,32 @@
+Članovi tima:
+
+Amel Karšić
+Tarik Proho
+Dijana Fermić
+
+Opis
+
+Automatizacija (interni sistem) jedne apoteke sa centralizacijom svih potrebnih podataka. Korisnici ove aplikacije će moći na jednom mjestu imati sistem za prodaju I nabavku lijekova. Sistem će takođe će sadržati informacije o svim uposlenicima I neke obavjetio kao što je obavjest za proizvode koji su pred istek roka I sl. 
+
+Funkcionalnosti 
+
+- Baza svih proizvoda jedne apoteke
+- Baza svih uposlenika jedne apoteke
+- Historija prodaje
+- Mogućnost nabavke
+- Upozorenja za proizvode pred istek roka
+- Validacija nabavke I prodaje
+
+Procesi
+
+- Prodaja lijekova/proizvoda pacijentima uz recept ili bez njega
+- Nabavka lijekova od raznih dobavljača
+- Evidencija troškova/prihoda
+- Evidencija o svim uposlenim
+- Dodavanje, brisanje I uređivanje uposlenika I proizvoda
+
+Akteri
+
+- Administrator sistema
+- Radnik
+- Kupac
