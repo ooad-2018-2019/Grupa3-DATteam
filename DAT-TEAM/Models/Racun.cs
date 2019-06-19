@@ -1,13 +1,18 @@
-﻿using System;
+﻿using DATteam.Models;
+using System;
+using System.Collections.Generic;
 
-public class Racun
+namespace DATteam.Models
 {
-    public int Id { get; }
-    public Radnik Narucilac { set; get; }
-    public DateTime datumKreiranja { set; get; }
-    public List<Proizvod> stavkeRacuna { set; get; }
+    public class Racun
+    {
+        public int Id { get; }
+        public Radnik Narucilac { set; get; }
+        public DateTime datumKreiranja { set; get; }
+        public List<Proizvod> stavkeRacuna { set; get; }
 
-	public Racun()
-	{
-	}
+        public Racun()
+        {
+        }
+    }
 }
