@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace DATteam.Migrations
 {
-    public partial class migracija : Migration
+    public partial class migracijadva : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -14,6 +14,13 @@ namespace DATteam.Migrations
                 {
                     id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    ime = table.Column<string>(nullable: true),
+                    prezime = table.Column<string>(nullable: true),
+                    username = table.Column<string>(nullable: true),
+                    password = table.Column<string>(nullable: true),
+                    email = table.Column<string>(nullable: true),
+                    datumRodjenja = table.Column<DateTime>(nullable: false),
+                    datumZaposlenja = table.Column<DateTime>(nullable: false),
                     Discriminator = table.Column<string>(nullable: false)
                 },
                 constraints: table =>

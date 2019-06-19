@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DATteam.Migrations
 {
     [DbContext(typeof(DATContext))]
-    [Migration("20190619112249_migracija")]
-    partial class migracija
+    [Migration("20190619174150_migracijadva")]
+    partial class migracijadva
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -29,6 +29,20 @@ namespace DATteam.Migrations
 
                     b.Property<string>("Discriminator")
                         .IsRequired();
+
+                    b.Property<DateTime>("datumRodjenja");
+
+                    b.Property<DateTime>("datumZaposlenja");
+
+                    b.Property<string>("email");
+
+                    b.Property<string>("ime");
+
+                    b.Property<string>("password");
+
+                    b.Property<string>("prezime");
+
+                    b.Property<string>("username");
 
                     b.HasKey("id");
 

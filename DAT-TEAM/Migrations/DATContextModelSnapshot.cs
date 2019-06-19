@@ -28,6 +28,20 @@ namespace DATteam.Migrations
                     b.Property<string>("Discriminator")
                         .IsRequired();
 
+                    b.Property<DateTime>("datumRodjenja");
+
+                    b.Property<DateTime>("datumZaposlenja");
+
+                    b.Property<string>("email");
+
+                    b.Property<string>("ime");
+
+                    b.Property<string>("password");
+
+                    b.Property<string>("prezime");
+
+                    b.Property<string>("username");
+
                     b.HasKey("id");
 
                     b.ToTable("Osoba");
