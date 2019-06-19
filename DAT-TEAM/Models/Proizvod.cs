@@ -5,8 +5,8 @@ namespace DATteam.Models
 {
     public class Proizvod
     {
-
-        public int Id { get; }
+        [Key]
+        public int Id { get; set; }
         public string Naziv { get; set; }
         public string Opis { get; set; }
         public string Proizvodjac { get; set; }
