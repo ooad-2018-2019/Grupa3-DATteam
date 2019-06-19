@@ -17,51 +17,54 @@
 </head>
 <body class="templatemo-bg-image-1" style="height: 600px">
     <div class="container">
+        @Html.ActionLink("PrijavaOnClick", "Prijava", null, new { @class = "signup-image-link" })
         <div class="col-md-12" style="left: 0px; top: 0px; width: 1200px">
-            <form class="form-horizontal templatemo-login-form-2" role="form" action="#" method="post">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1>Prijavite se</h1>
-                    </div>
-                </div>
-                @using (Html.BeginForm("PrijavaOnClick", "Index"))
-                {
-                <div class="row">
-                    <div class="templatemo-one-signin col-md-6">
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <label for="username" name ="username" class="control-label">Username</label>
-                                <div class="templatemo-input-icon-container">
-                                    <i class="fa fa-user"></i>
-                                    
-                                    <input type="text" class="form-control" id="username" placeholder="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <label for="password" name="password" class="control-label">Password</label>
-                                <div class="templatemo-input-icon-container">
-                                    <i class="fa fa-lock"></i>
-                                    <input type="password" class="form-control" id="password" placeholder="">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <div class="checkbox">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-md-12">
-                                <input type="submit" value="LOG IN" class="btn btn-warning">
-                            </div>
+            @using (Html.BeginForm("Index", "Proizvods"))
+            {
+                <form class="form-horizontal templatemo-login-form-2" role="form" action="#" method="post">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1>Prijavite se</h1>
                         </div>
                     </div>
-                </div>
-                }
-            </form>
+
+                    <div class="row">
+                        <div class="templatemo-one-signin col-md-6">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="username" name="username" class="control-label">Username</label>
+                                    <div class="templatemo-input-icon-container">
+                                        <i class="fa fa-user"></i>
+
+                                        <input type="text" class="form-control" id="username" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <label for="password" name="password" class="control-label">Password</label>
+                                    <div class="templatemo-input-icon-container">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" class="form-control" id="password" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="checkbox">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <input type="submit" value="LOG IN" class="btn btn-warning">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            }
         </div>
     </div>
 </body>
