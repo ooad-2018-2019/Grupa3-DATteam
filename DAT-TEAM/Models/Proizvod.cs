@@ -18,7 +18,7 @@ public class Proizvod
         Id = id;
         Opis = opis;
         Proizvodjac = proizvodjac;
-        Cijana = cijena;
+        Cijena = cijena;
         rokTrajanja = rok;
         lijekTip = tip;
         naRecept = recept;
