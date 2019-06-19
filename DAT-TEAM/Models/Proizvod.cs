@@ -16,6 +16,7 @@ namespace DATteam.Models
         public bool naRecept { get; set; }
         public int kolicnia { get; set; }
 
+
         public Proizvod()
         {
         }
