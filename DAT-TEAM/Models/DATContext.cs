@@ -36,6 +36,10 @@ namespace DATteam.Models
             {
 
             }
+
+        public Osoba premaUsername(String username) {
+            return Osoba.Where((Osoba osoba) => osoba.email.Equals(username)).First();
+        }
     }
    
 }

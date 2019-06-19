@@ -5,11 +5,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using DAT_TEAM.Models;
+using DATteam.Models;
 
 namespace DAT_TEAM.Controllers
 {
     public class HomeController : Controller
     {
+        private static DATContext db = DATContext.getInstance();
+        public static String prijavljen = "";
+
         public IActionResult Index()
         {
             return View();
@@ -32,6 +36,25 @@ namespace DAT_TEAM.Controllers
         public IActionResult Privacy()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult PrijavaOnClick(string username, string password)
+        {
+            var trOsoba = db.Osoba.Where((Osoba osoba) => osoba.username.Equals(username));
+
+            if (trOsoba.Count() != 0) {
+                Osoba osoba = db.premaUsername(username);
+                if (osoba.password.Equals(password))
+                {
+                    return View("../Proizvods/Index");
+                }
+
+                else return View("../Home/Index");
+            }
+
+
+            return View("../Home/Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

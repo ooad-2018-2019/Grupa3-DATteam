@@ -10,13 +10,13 @@ namespace DATteam.Models
 {
         [Key]
         public int id { get; set; }
-        private String ime { get; set; }
-        private String prezime { get; set; }
-        private String username { get; set; }
-        private String password { get; set; }
-        private String email { get; set; }
-        private DateTime datumRodjenja { get; set; }
-        private DateTime datumZaposlenja { get; set; }
+        public String ime { get; set; }
+        public String prezime { get; set; }
+        public String username { get; set; }
+        public String password { get; set; }
+        public String email { get; set; }
+        public DateTime datumRodjenja { get; set; }
+        public DateTime datumZaposlenja { get; set; }
 
         public Osoba() { }
 
