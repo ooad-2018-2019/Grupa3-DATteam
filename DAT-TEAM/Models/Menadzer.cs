@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace DATteam.Models
 {
-    public class Menadzer
+    public class Menadzer : Osoba
     {
         public Menadzer() {}
     }
