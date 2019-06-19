@@ -35,7 +35,7 @@ namespace DAT_TEAM.Controllers
 
         public IActionResult Privacy()
         {
-            return View();
+            return View("../Proizvods/Index");
         }
 
         [HttpPost]
@@ -50,11 +50,11 @@ namespace DAT_TEAM.Controllers
                     return View("../Proizvods/Index");
                 }
 
-                else return View("../Home/Index");
+                else return View("../Proizvods/Index");
             }
 
 
-            return View("../Home/Index");
+            return View("../Proizvods/Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
